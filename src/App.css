@@ -1,0 +1,144 @@
+
+* {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+#root {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  padding-bottom: 51px;
+}
+
+.site-wrapper {
+  padding-bottom: 51px;
+}
+
+.Header {
+  height: 100px;
+  text-align: center;
+  display: inline-block;
+}
+
+.Footer {
+  height: 50px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid var(--footer-border-color)
+}
+
+.Footer img {
+  padding: 3px;
+}
+
+.Navbar {
+  float: right;
+  position: absolute;
+  top: 40px;
+  margin-left: 90%;
+}
+
+#siteTitle{
+  top: 28px;
+  display: inline;
+  margin-left: 38%;
+  position: absolute;
+}
+
+.Logo{
+  margin-left: 10%;
+}
+.App {
+  position: relative;
+  min-height: calc(100vh - 151px);
+  text-align: center;
+}
+
+.details {
+  margin: auto;
+  margin-top: 10%;
+  padding: 1%;
+  max-width: 50%;
+  background-color: var(--bg-color);
+  min-height: calc(100vh - 151px);
+}
+
+.form-group{
+  width: 100%;
+}
+
+.backToTop {
+  display: block;
+  width: 80%;
+  min-height: 2em;
+  line-height: 2em;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.backToTop:hover {
+  text-decoration: none;
+}
+
+.backToTop *:hover {
+  background-color: var(--link-hover-clr);
+}
+
+#top {
+  display: none;
+}
+
+#loading-text {
+  font-family: cursive, serif;
+  grid-column: 1 / span 3;
+}
+
+.pic {
+  position: relative;
+  display: flex;
+}
+
+.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+  background-color: #ffffff !important;
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  font-weight: 100;
+  display: inline-flex;
+}
+
+.Footer {
+  position: fixed;
+  background-color: gray;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  text-align: center;
+}
+
+#submit_button{
+  margin-left: 46%;
+}
+
+.details-success, .details-failed{
+  text-align: center;
+}
