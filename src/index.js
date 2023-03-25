@@ -13,9 +13,10 @@ ReactDOM.render(
   <Router>
     <Header/>
       <Switch>
-            <Route exact path="/" component={Details} />
-            <Route exact path="/success" render={() => showSuccess() ? <Success/> : <Redirect to="/"/> } />
-            <Route exact path="/failed" render={() => showFailed() ? <Failed/> : <Redirect to="/"/> } />
+            <Route exact path="/" render={() => <Redirect to="/story/Transform-to-Open-Science/edit/home"/>} />
+            <Route exact path="/story/Transform-to-Open-Science/edit/home" component={Details} />
+            <Route exact path="/story/Transform-to-Open-Science/edit/success" render={() => showSuccess() ? <Success/> : <Redirect to="/"/> } />
+            <Route exact path="/story/Transform-to-Open-Science/edit/failed" render={() => showFailed() ? <Failed/> : <Redirect to="/"/> } />
       </Switch>
     <Footer />
   </Router>,
